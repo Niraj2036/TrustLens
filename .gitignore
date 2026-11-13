@@ -1,0 +1,59 @@
+# Publish only application source, tests, runtime configuration, and this README.
+# Everything else stays local unless explicitly allowed below.
+*
+
+# Root application files and repository instructions
+!/.gitignore
+!/README.md
+!/app.py
+!/analyze.py
+!/run.bat
+!/requirements.txt
+!/package.json
+
+# Python application code
+!/trustlens/
+!/trustlens/*.py
+
+# Browser application source and required assets
+!/web/
+!/web/*.html
+!/web/*.css
+!/web/*.js
+!/web/*.svg
+
+# Application tests
+!/tests/
+!/tests/*.py
+!/tests/*.cjs
+
+# Recreate the ignored submission dataset from source
+!/scripts/
+!/scripts/generate_dataset.py
+
+# Keep caches, dependencies, credentials, and generated binaries excluded.
+# These rules also apply inside the allowed source directories.
+**/__pycache__/
+**/*.py[cod]
+**/node_modules/
+**/.venv/
+**/venv/
+**/.env
+**/.env.*
+**/*.key
+**/*.pem
+**/*.sqlite3*
+**/*.db*
+
+# Examples excluded by the default rule above:
+# /data/                  Local SQLite workspace
+# /datasets/              Generated JSON, CSV, schema, and dataset notes
+# /docs/                  Report content, technical notes, and document QA
+# /reports/               Generated analysis reports
+# /project_documents/     Word documents
+# /presentations/         Final PowerPoint
+# /presentation_build/    PowerPoint source, drafts, previews, and validation
+# /trustlens_dataset.zip  Dataset submission archive
+# Root Word, design, UX, and audit files
+# Optional document/design helper scripts
+

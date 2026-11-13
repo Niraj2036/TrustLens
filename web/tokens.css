@@ -1,0 +1,20 @@
+/* Generated from DESIGN.md. Run python scripts/design_tokens.py. */
+:root {
+  --color-primary: #275dce;
+  --color-ink: #172b46;
+  --color-muted: #576b83;
+  --color-background: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-border: #dce4ee;
+  --color-success: #13735b;
+  --color-warning: #905b08;
+  --color-danger: #b43d49;
+  --font-sans: Segoe UI, Arial, sans-serif;
+  --font-display: Trebuchet MS, Segoe UI, sans-serif;
+  --font-mono: Consolas, monospace;
+  --radius-default: 0.625rem;
+  --radius-sm: 0.375rem;
+  --radius-lg: 1rem;
+  --space-section-gap: 1.5rem;
+  --space-page-max: 90rem;
+}
